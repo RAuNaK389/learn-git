@@ -76,6 +76,12 @@ Important git commands:
 
 25 . git checkout -f --> to return to last commit state.
 
+26. git config --global alias.st status --> provide an alias 'st' to status.
+	ex: git config --global alias.last 'git log -p -1' --> provide an alias 'last' to given command.
+	ex: git config --global alias.unstage 'git restore --staged --'  --> provide an alias 'unstage' to given command.
+
+27. git --help --> for help
+
 
 
 
