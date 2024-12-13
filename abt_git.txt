@@ -70,7 +70,13 @@ Important git commands:
 
 22. git commit --amend  --> to make changes in your commit.
 
-23. 
+23. git restore --staged <filename> --> to unstage a file .
+
+24. git checkout -- <filename> --> to restore the file as in previous commit after being modified(it must be unstaged first to return to previous commit state).
+
+25 . git checkout -f --> to return to last commit state.
+
+
 
 
 
