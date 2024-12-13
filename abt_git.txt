@@ -1,0 +1,82 @@
+Important git commands:
+1. git status -> to check if the current working directory is an existing git repository or not and to check the current status of files and folders in the directory.
+
+2.git init ->to initialise a git repository (creates a hidden <.git> folder)
+
+3.rm -rf .git -> to delete the <.git> folder (stop tracking of files) 
+
+## NOTE: rm -rf is a LINUX command to delete a folder/file.
+
+--> Other LINUX commands :
+	1. pwd -> returns the name present working directory
+	2. ls -> List objects in the current directory
+	3. cd -> Change the working directory 
+		ex: cd /c/users/rauna/desktop --> changes working directory to given path.
+		ex: cd git/ --> changes pwd to a folder named "git" in working directory. 
+
+4.git add --a or git add .  -> to add all files to stagging area 
+	.:. use git add <filename> to add a single file/folder to stagging area.
+
+5. git commit -m " text message " -> to commit changes 
+
+6. About git ignore:
+--> git ignore is a file in which you can add the names of files/folder which you do not want to track (ex: error files or .exe files)
+--> to create a git ignore use command : <touch .gitignore> .:. creates a .gitignore file 
+--> touch is a LINUX command to create a file 
+--> ex: <touch error.log> .:. creates an error.log file 
+--> if you enter <error.log>  in <.gitignore> the fill will not be tracked 
+	## NOTE: use <*.log> to ignore any file with .log extension
+
+--> let say you have a folder named <dir> in your working directory , then if you write </dir/> in <.gitignore> the folder will not be tracked.
+## NOTE: if you use <dir/> then any folder with name <dir> will be ignored irrespective of its location in working directory (i.e let say it is present inside a folder named <jello
+> ) but </dir/> will only ignore folder which is outside .
+
+--> for better example let say you created a folder <dir> in the pwd and an another folder <static> which contains [<dir>,<hello.txt>] these two files , now if you write </dir/> in git ignore only the outside folder will not be tracked , but if you write <dir/> the folder<dir> inside the <static> folder will also be ignored and only <hello.txt> will be tracked . 
+
+7. git clone <url> <new name(optional)> --> to clone a remote git repository from GitHub in your local computer .
+## NOTE: use shift+Insert to paste the url in gitBash.
+
+8. git diff --> to get the difference between the current working directory and stagging.
+
+9. git diff --staged  --> to get the difference between the stagging and the last commit.
+
+10. git commit -a -m "text message" --> to make a direct commit without stagging.
+## NOTE: we can directly commit only those files/directories which we have been tracking , it will not work if I create a new file and use this command. 
+	I have to add it to stage first and then make a commit.  
+
+11. git log --> commit history of the repository.
+
+12. git mv <file_name> <new file_name> --> to rename a file(it directly adds this change to stagging area) (on manually renaming using git status will show that you deleted old file and created new file and will not add it to stagging area)
+
+13. git rm <file name> --> to remove or delete a file.
+
+14. git nm --cached <filename> --> to untrack a currently tracked file.
+
+## NOTE: If you want to untrack a currently tracked file , simply writing its name in gitignore will not work as it is being tracked , to untrack it use above command and then write it in gitignore to ignore it.
+
+15. git log -p --> to see commit history along with diff(changes made)
+
+16. git lod -p -n  --> to last n commits along with diff.
+
+17. git log --stat --> gives short summary of commits.
+
+18. git log --pretty=oneline  --> tells about each commit in one line.
+
+19. git log --pretty=short  --> tells about each commit in short.
+
+20. git log --since=n.days --> shows all the commits made in last 'n' days.(weeks/months/years can also be used)
+
+21. git log --pretty=format:"%h -- %ae" --> shows output of git log in the specified format %h->commit hash %ae->author email.  
+
+22. git commit --amend  --> to make changes in your commit.
+
+23. 
+
+
+
+
+
+
+
+
+
