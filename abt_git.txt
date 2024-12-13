@@ -82,6 +82,13 @@ Important git commands:
 
 27. git --help --> for help
 
+28. git checkout -b <parallel branch name> --> to create a parallel branch.
+
+29. git checkout master --> to return to master branch.
+
+
+
+
 
 
 
